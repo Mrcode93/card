@@ -22,6 +22,177 @@
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url(/images/bg-pattern-top.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: -300px -500px;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    background: url(/images/bg-pattern-bottom.svg);
+    width: 800px;
+    height: 800px;
+    bottom: -400px;
+    right: -200px;
+    z-index: -1;
+}
+
+.box {
+    width: 350px;
+    height: 375px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+}
+
+.box .uper {
+    background-image: url(/images/bg-pattern-card.svg);
+    width: 350px;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.box .user {
+    content: '';
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background-image: url(/images/image-victor.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 85px;
+    left: 120px;
+    border: 5px solid #fff;
+}
+
+.box .notes {
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.notes h1 {
+    position: absolute;
+    top: 55px;
+    left: 90px;
+    font-size: 20px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
+.notes h2 {
+    position: absolute;
+    top: 57px;
+    left: 215px;
+    font-size: 18px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.notes p {
+    position: absolute;
+    top: 95px;
+    left: 135px;
+    font-size: 15px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.notes::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 0.5px;
+    background-color: hsla(227, 10%, 46%, 0.555);
+    bottom: 0;
+    left: 0;
+}
+
+.box .lower {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.lower span h3 {
+    color: hsl(229, 23%, 23%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lower span p {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+span .circle_1 {
+    position: absolute;
+    top: -500px;
+    left: -100px;
+    z-index: -1
+}
+
+span .circle_2 {
+    position: absolute;
+    bottom: -500px;
+    right: -500px;
+    z-index: -1
+}
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
       }
     </style>
   </head>
